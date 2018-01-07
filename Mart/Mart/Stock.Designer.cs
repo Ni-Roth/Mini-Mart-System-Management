@@ -37,9 +37,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.25F);
             this.label1.Location = new System.Drawing.Point(269, 159);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(245, 47);
+            this.label1.Size = new System.Drawing.Size(279, 47);
             this.label1.TabIndex = 0;
-            this.label1.Text = "how are you";
+            this.label1.Text = "how are you ?";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Stock
