@@ -13,7 +13,6 @@ namespace Mart
     public partial class Form1 : Form
     {
         List<Panel> listPanel = new List<Panel>();
-        int index;
         public Form1()
         {
             InitializeComponent();
@@ -30,6 +29,7 @@ namespace Mart
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+
         }
 
         private void btnUser_Click(object sender, EventArgs e)
