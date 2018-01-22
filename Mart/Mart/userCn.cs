@@ -13,7 +13,7 @@ namespace Mart
     public partial class userCn : UserControl
     {
         private static userCn _instance;
-
+        UserDao uDao;
         public static userCn Instance
         {
             get
@@ -26,6 +26,25 @@ namespace Mart
         public userCn()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userCn_Load(object sender, EventArgs e)
+        {
+            uDao = new UserDao();
+            //List<User> list = uDao.GetUser();
+
+            //foreach (User item in list)
+            //{
+            //    dgvUser.Rows.Add(item.Id,item.Name);
+            //}
+
+            uDao.FillDataGrid(dgvUser);
+
         }
     }
 }

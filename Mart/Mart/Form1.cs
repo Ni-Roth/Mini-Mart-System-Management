@@ -8,12 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Mart
 {
     public partial class Form1 : Form
     {
         List<Panel> listPanel = new List<Panel>();
-        int index;
+       
         public Form1()
         {
             InitializeComponent();
@@ -21,8 +22,10 @@ namespace Mart
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.TopMost = true;
-            this.FormBorderStyle = FormBorderStyle.None;
+            
+
+            //this.TopMost = true;
+            //this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
             
         }
