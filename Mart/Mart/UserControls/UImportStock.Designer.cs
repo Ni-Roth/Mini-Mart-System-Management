@@ -1,6 +1,6 @@
-﻿namespace Mart
+﻿namespace Mart.UserControls
 {
-    partial class binCn
+    partial class UImportStock
     {
         /// <summary> 
         /// Required designer variable.
@@ -34,20 +34,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Quicksand", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(157, 88);
+            this.label1.Location = new System.Drawing.Point(237, 194);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(198, 143);
+            this.label1.Size = new System.Drawing.Size(67, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Bin";
+            this.label1.Text = "Import Stock";
             // 
-            // binCn
+            // UImport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
-            this.Name = "binCn";
-            this.Size = new System.Drawing.Size(575, 363);
+            this.Name = "UImport";
+            this.Size = new System.Drawing.Size(553, 422);
             this.ResumeLayout(false);
             this.PerformLayout();
 

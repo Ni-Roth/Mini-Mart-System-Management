@@ -8,22 +8,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Mart
+namespace Mart.UserControls
 {
-    public partial class reportCn : UserControl
+    public partial class UImportStock : UserControl
     {
-        private static reportCn _instance;
+        private static UImportStock _instance;
 
-        public static reportCn Instance
+        public static UImportStock Instance
         {
             get
             {
                 if (_instance == null)
-                    _instance = new reportCn();
+                    _instance = new UImportStock();
                 return _instance;
             }
         }
-        public reportCn()
+        public UImportStock()
         {
             InitializeComponent();
         }

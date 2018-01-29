@@ -1,6 +1,6 @@
 ﻿namespace Mart
 {
-    partial class Form1
+    partial class frmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.btnStock = new System.Windows.Forms.Button();
             this.btnSold = new System.Windows.Forms.Button();
             this.btnReport = new System.Windows.Forms.Button();
@@ -206,12 +206,10 @@
             // 
             // mainPanel
             // 
-            this.mainPanel.BackColor = System.Drawing.SystemColors.Control;
-            this.mainPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.mainPanel.Controls.Add(this.label1);
             this.mainPanel.Location = new System.Drawing.Point(100, 2);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(973, 729);
+            this.mainPanel.Size = new System.Drawing.Size(973, 719);
             this.mainPanel.TabIndex = 14;
             this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint);
             // 

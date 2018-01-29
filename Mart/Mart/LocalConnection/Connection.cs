@@ -8,10 +8,10 @@ using System.Data.SqlClient;
 namespace Mart
 {
      public class Connection
-    {
+    { 
         public static SqlConnection getConnection()
         {
-            string conString = @"Data Source=VIROTH\VIROTHSQL; Initial Catalog=Mart; Integrated Security=true;";
+            string conString = @"Data Source=THOURA-PC; Initial Catalog=Mart; Integrated Security=true;";
             return new SqlConnection(conString);
         }
     }

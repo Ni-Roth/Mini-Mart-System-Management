@@ -10,20 +10,20 @@ using System.Windows.Forms;
 
 namespace Mart
 {
-    public partial class productCn : UserControl
+    public partial class UBin : UserControl
     {
-        private static productCn _instance;
+        private static UBin _instance;
 
-        public static productCn Instance
+        public static UBin Instance
         {
             get
             {
                 if (_instance == null)
-                    _instance = new productCn();
+                    _instance = new UBin();
                 return _instance;
             }
         }
-        public productCn()
+        public UBin()
         {
             InitializeComponent();
         }

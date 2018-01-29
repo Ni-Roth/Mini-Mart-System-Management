@@ -1,6 +1,6 @@
 ﻿namespace Mart
 {
-    partial class productCn
+    partial class UReport
     {
         /// <summary> 
         /// Required designer variable.
@@ -34,20 +34,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Quicksand", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(79, 106);
+            this.label1.Font = new System.Drawing.Font("Quicksand", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(138, 102);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 48);
+            this.label1.Size = new System.Drawing.Size(362, 143);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Product";
+            this.label1.Text = "Report";
             // 
-            // productCn
+            // reportCn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
-            this.Name = "productCn";
-            this.Size = new System.Drawing.Size(284, 290);
+            this.Name = "reportCn";
+            this.Size = new System.Drawing.Size(711, 398);
             this.ResumeLayout(false);
             this.PerformLayout();
 
