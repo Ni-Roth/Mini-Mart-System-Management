@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Mart.Intefaces
+namespace Marts.Intefaces
 {
     interface IMessageType
     {

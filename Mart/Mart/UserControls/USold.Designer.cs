@@ -1,4 +1,4 @@
-﻿namespace Mart
+﻿namespace Marts
 {
     partial class USold
     {

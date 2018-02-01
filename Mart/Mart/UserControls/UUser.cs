@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-using Mart.InstanceClass;
-using Mart.UserControls;
-using Mart.Intefaces;
+using Marts.InstanceClass;
+using Marts.UserControls;
+using Marts.Intefaces;
 
-namespace Mart
+namespace Marts
 {
     public partial class UUser : UserControl,IFunctionModel<User>,IMessageType
     {

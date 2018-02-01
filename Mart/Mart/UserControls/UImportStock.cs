@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Mart.UserControls
+namespace Marts.UserControls
 {
     public partial class UImportStock : UserControl
     {

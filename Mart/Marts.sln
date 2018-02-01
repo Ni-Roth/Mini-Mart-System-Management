@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mart", "Mart\Mart.csproj", "{CA8B3798-9573-423F-AF4D-5FB4B6829A4A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marts", "Mart\Marts.csproj", "{CA8B3798-9573-423F-AF4D-5FB4B6829A4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mart", "C:\Users\Thoura Lai\Desktop\Mini-Mart-System-Management\Mart\Mart\Mart.csproj", "{FD6F5499-73A3-40B8-B9B9-C9A7B4800E6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{CA8B3798-9573-423F-AF4D-5FB4B6829A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA8B3798-9573-423F-AF4D-5FB4B6829A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA8B3798-9573-423F-AF4D-5FB4B6829A4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD6F5499-73A3-40B8-B9B9-C9A7B4800E6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD6F5499-73A3-40B8-B9B9-C9A7B4800E6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD6F5499-73A3-40B8-B9B9-C9A7B4800E6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD6F5499-73A3-40B8-B9B9-C9A7B4800E6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
