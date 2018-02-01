@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Marts.UserControls;
 
-namespace Marts
+namespace Mart
 {
     public partial class frmMain : Form
     {
