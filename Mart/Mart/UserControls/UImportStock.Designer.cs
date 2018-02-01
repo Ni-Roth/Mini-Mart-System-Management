@@ -1,4 +1,4 @@
-﻿namespace Marts.UserControls
+﻿namespace Mart.UserControls
 {
     partial class UImportStock
     {

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Marts.UserControls;
+using Mart.UserControls;
 
 namespace Mart
 {
@@ -30,9 +30,9 @@ namespace Mart
 
         private void RegisterEventControll()
         {
-            panel1.MouseDown += pBanner_MouseDown;
-            panel1.MouseUp += pBanner_MouseUp;
-            panel1.MouseMove += pBanner_MouseMove;
+            pBanner.MouseDown += pBanner_MouseDown;
+            pBanner.MouseUp += pBanner_MouseUp;
+            pBanner.MouseMove += pBanner_MouseMove;
             pbExit.Click +=DoClick;
             pbMinimize.Click += DoClick;
             pbResize.Click += DoClick;
@@ -40,9 +40,9 @@ namespace Mart
 
         private void RegisterEventMove()
         {
-            panel1.MouseDown += pBanner_MouseDown;
-            panel1.MouseUp += pBanner_MouseUp;
-            panel1.MouseMove += pBanner_MouseMove;
+            pBanner.MouseDown += pBanner_MouseDown;
+            pBanner.MouseUp += pBanner_MouseUp;
+            pBanner.MouseMove += pBanner_MouseMove;
         }
 
         void pBanner_MouseMove(object sender, MouseEventArgs e)

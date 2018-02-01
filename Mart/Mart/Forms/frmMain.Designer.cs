@@ -1,4 +1,4 @@
-﻿namespace Marts
+﻿namespace Mart
 {
     partial class frmMain
     {
@@ -32,10 +32,6 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.mainPanel = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnReport = new System.Windows.Forms.Button();
             this.btnUser = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
@@ -44,15 +40,19 @@
             this.btnSold = new System.Windows.Forms.Button();
             this.btnBin = new System.Windows.Forms.Button();
             this.btnProduct = new System.Windows.Forms.Button();
+            this.mainPanel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pBanner = new System.Windows.Forms.Panel();
             this.pbResize = new System.Windows.Forms.PictureBox();
             this.pbLogo = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.pbMinimize = new System.Windows.Forms.PictureBox();
             this.pbExit = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.mainPanel.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.pBanner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbResize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimize)).BeginInit();
@@ -64,7 +64,7 @@
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pBanner, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
@@ -121,53 +121,6 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(70, 547);
             this.tableLayoutPanel3.TabIndex = 16;
-            // 
-            // mainPanel
-            // 
-            this.mainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.mainPanel.Controls.Add(this.label1);
-            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainPanel.Location = new System.Drawing.Point(74, 0);
-            this.mainPanel.Margin = new System.Windows.Forms.Padding(0);
-            this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Padding = new System.Windows.Forms.Padding(5);
-            this.mainPanel.Size = new System.Drawing.Size(850, 551);
-            this.mainPanel.TabIndex = 14;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.25F);
-            this.label1.Location = new System.Drawing.Point(131, 98);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 47);
-            this.label1.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(130)))));
-            this.panel1.Controls.Add(this.pbResize);
-            this.panel1.Controls.Add(this.pbLogo);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.pbMinimize);
-            this.panel1.Controls.Add(this.pbExit);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(924, 32);
-            this.panel1.TabIndex = 17;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(33, 8);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(186, 16);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Mart Management System";
             // 
             // btnReport
             // 
@@ -417,10 +370,46 @@
             this.btnProduct.UseMnemonic = false;
             this.btnProduct.UseVisualStyleBackColor = false;
             // 
+            // mainPanel
+            // 
+            this.mainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.mainPanel.Controls.Add(this.label1);
+            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.Location = new System.Drawing.Point(74, 0);
+            this.mainPanel.Margin = new System.Windows.Forms.Padding(0);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.Padding = new System.Windows.Forms.Padding(5);
+            this.mainPanel.Size = new System.Drawing.Size(850, 551);
+            this.mainPanel.TabIndex = 14;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.25F);
+            this.label1.Location = new System.Drawing.Point(131, 98);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 47);
+            this.label1.TabIndex = 0;
+            // 
+            // pBanner
+            // 
+            this.pBanner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(130)))));
+            this.pBanner.Controls.Add(this.pbResize);
+            this.pBanner.Controls.Add(this.pbLogo);
+            this.pBanner.Controls.Add(this.label2);
+            this.pBanner.Controls.Add(this.pbMinimize);
+            this.pBanner.Controls.Add(this.pbExit);
+            this.pBanner.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pBanner.Location = new System.Drawing.Point(0, 0);
+            this.pBanner.Margin = new System.Windows.Forms.Padding(0);
+            this.pBanner.Name = "pBanner";
+            this.pBanner.Size = new System.Drawing.Size(924, 32);
+            this.pBanner.TabIndex = 17;
+            // 
             // pbResize
             // 
             this.pbResize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbResize.Image = global::Marts.Properties.Resources.Resize;
+            this.pbResize.Image = global::Mart.Properties.Resources.Resize;
             this.pbResize.Location = new System.Drawing.Point(866, 0);
             this.pbResize.Name = "pbResize";
             this.pbResize.Size = new System.Drawing.Size(29, 26);
@@ -430,7 +419,7 @@
             // 
             // pbLogo
             // 
-            this.pbLogo.Image = global::Marts.Properties.Resources.Home;
+            this.pbLogo.Image = global::Mart.Properties.Resources.Home;
             this.pbLogo.Location = new System.Drawing.Point(1, 3);
             this.pbLogo.Name = "pbLogo";
             this.pbLogo.Size = new System.Drawing.Size(29, 26);
@@ -438,10 +427,21 @@
             this.pbLogo.TabIndex = 5;
             this.pbLogo.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(33, 8);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(186, 16);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Mart Management System";
+            // 
             // pbMinimize
             // 
             this.pbMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbMinimize.Image = global::Marts.Properties.Resources.Minimizing;
+            this.pbMinimize.Image = global::Mart.Properties.Resources.Minimizing;
             this.pbMinimize.Location = new System.Drawing.Point(837, 0);
             this.pbMinimize.Name = "pbMinimize";
             this.pbMinimize.Size = new System.Drawing.Size(29, 26);
@@ -452,7 +452,7 @@
             // pbExit
             // 
             this.pbExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbExit.Image = global::Marts.Properties.Resources.Exit;
+            this.pbExit.Image = global::Mart.Properties.Resources.Exit;
             this.pbExit.Location = new System.Drawing.Point(894, 1);
             this.pbExit.Name = "pbExit";
             this.pbExit.Size = new System.Drawing.Size(29, 26);
@@ -476,8 +476,8 @@
             this.tableLayoutPanel3.ResumeLayout(false);
             this.mainPanel.ResumeLayout(false);
             this.mainPanel.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pBanner.ResumeLayout(false);
+            this.pBanner.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbResize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimize)).EndInit();
@@ -501,7 +501,7 @@
         private System.Windows.Forms.Button btnProduct;
         private System.Windows.Forms.Panel mainPanel;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pBanner;
         private System.Windows.Forms.PictureBox pbMinimize;
         private System.Windows.Forms.PictureBox pbExit;
         private System.Windows.Forms.PictureBox pbLogo;

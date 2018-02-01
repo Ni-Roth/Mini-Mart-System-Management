@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Marts.Intefaces
+namespace Mart.Intefaces
 {
     interface IFunctionModel<T>
     {
