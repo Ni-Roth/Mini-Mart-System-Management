@@ -33,16 +33,27 @@ namespace Mart
             pBanner.MouseDown += pBanner_MouseDown;
             pBanner.MouseUp += pBanner_MouseUp;
             pBanner.MouseMove += pBanner_MouseMove;
+
             pbExit.Click +=DoClick;
             pbMinimize.Click += DoClick;
             pbResize.Click += DoClick;
+
+            /* Register Manu Buttons */
+            btnUser.Click +=btnUser_Click;
+            btnStock.Click +=btnStock_Click;
+            btnSold.Click +=btnSold_Click;
+            btnSetting.Click +=btnSetting_Click;
+            btnReport.Click +=btnReport_Click;
+            btnProduct.Click +=btnProduct_Click;
+            btnExit.Click +=btnExit_Click;
+            btnBin.Click +=btnBin_Click;
         }
 
         private void RegisterEventMove()
         {
             pBanner.MouseDown += pBanner_MouseDown;
             pBanner.MouseUp += pBanner_MouseUp;
-            pBanner.MouseMove += pBanner_MouseMove;
+            pBanner.MouseMove += pBanner_MouseMove;           
         }
 
         void pBanner_MouseMove(object sender, MouseEventArgs e)
@@ -114,15 +125,15 @@ namespace Mart
 
         private void btnUser_Click(object sender, EventArgs e)
         {
-            if (!mainPanel.Controls.Contains(UUser.Instance))
+            if (!mainPanel.Controls.Contains(UEmployee.Instance))
             {
-                mainPanel.Controls.Add(UUser.Instance);
-                UUser.Instance.Dock = DockStyle.Fill;
-                UUser.Instance.BringToFront();
+                mainPanel.Controls.Add(UEmployee.Instance);
+                UEmployee.Instance.Dock = DockStyle.Fill;
+                UEmployee.Instance.BringToFront();
             }
             else
             {
-                UUser.Instance.BringToFront();
+                UEmployee.Instance.BringToFront();
             }
         }
 

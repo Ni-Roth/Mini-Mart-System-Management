@@ -47,27 +47,31 @@ namespace Mart.Forms
 
         private void RegisterEventMove()
         {
-            pBanner.MouseDown += pBanner_MouseDown;
-            pBanner.MouseUp += pBanner_MouseUp;
-            pBanner.MouseMove += pBanner_MouseMove;
+            pBanner.MouseDown += DoMouseDown;
+            pBanner.MouseUp += DoMouseUp;
+            pBanner.MouseMove += DoMouseMove;
+
+            lblTitle.MouseDown += DoMouseDown;
+            lblTitle.MouseUp += DoMouseUp;
+            lblTitle.MouseMove += DoMouseMove;
         }
 
-        void pBanner_MouseMove(object sender, MouseEventArgs e)
+        void DoMouseMove(object sender, MouseEventArgs e)
         {
             if (mouseDown)
             {
-                mouseX = MousePosition.X - 200;
-                mouseY = MousePosition.Y - 20;
+                mouseX = MousePosition.X - 100;
+                mouseY = MousePosition.Y - 10;
                 this.SetDesktopLocation(mouseX,mouseY);
             }
         }
 
-        void pBanner_MouseUp(object sender, MouseEventArgs e)
+        void DoMouseUp(object sender, MouseEventArgs e)
         {
             mouseDown = false;
         }
 
-        void pBanner_MouseDown(object sender, MouseEventArgs e)
+        void DoMouseDown(object sender, MouseEventArgs e)
         {
             mouseDown = true;
         }

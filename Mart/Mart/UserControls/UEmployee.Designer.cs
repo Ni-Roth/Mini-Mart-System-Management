@@ -1,6 +1,6 @@
 ﻿namespace Mart
 {
-    partial class UUser
+    partial class UEmployee
     {
         /// <summary> 
         /// Required designer variable.
@@ -43,10 +43,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUser.Location = new System.Drawing.Point(17, 44);
+            this.dgvUser.Location = new System.Drawing.Point(17, 35);
             this.dgvUser.Name = "dgvUser";
             this.dgvUser.ReadOnly = true;
-            this.dgvUser.Size = new System.Drawing.Size(668, 295);
+            this.dgvUser.Size = new System.Drawing.Size(649, 382);
             this.dgvUser.TabIndex = 0;
             // 
             // btnAdd
@@ -76,7 +76,7 @@
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // UUser
+            // UEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -85,8 +85,8 @@
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dgvUser);
-            this.Name = "UUser";
-            this.Size = new System.Drawing.Size(708, 363);
+            this.Name = "UEmployee";
+            this.Size = new System.Drawing.Size(684, 441);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).EndInit();
             this.ResumeLayout(false);
 

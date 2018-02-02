@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mart", "Mart\Mart.csproj", "{CA8B3798-9573-423F-AF4D-5FB4B6829A4A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mart9", "C:\Users\Thoura Lai\Desktop\Mini-Mart-System-Management\Mart\Mart\Mart9.csproj", "{BF34364F-A023-478B-B4D3-0A5CDFEA65D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CA8B3798-9573-423F-AF4D-5FB4B6829A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA8B3798-9573-423F-AF4D-5FB4B6829A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA8B3798-9573-423F-AF4D-5FB4B6829A4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF34364F-A023-478B-B4D3-0A5CDFEA65D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF34364F-A023-478B-B4D3-0A5CDFEA65D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF34364F-A023-478B-B4D3-0A5CDFEA65D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF34364F-A023-478B-B4D3-0A5CDFEA65D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

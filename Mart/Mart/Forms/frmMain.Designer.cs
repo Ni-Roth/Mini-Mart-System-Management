@@ -378,7 +378,7 @@
             this.mainPanel.Location = new System.Drawing.Point(74, 0);
             this.mainPanel.Margin = new System.Windows.Forms.Padding(0);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Padding = new System.Windows.Forms.Padding(5);
+            this.mainPanel.Padding = new System.Windows.Forms.Padding(1);
             this.mainPanel.Size = new System.Drawing.Size(850, 551);
             this.mainPanel.TabIndex = 14;
             // 
@@ -386,7 +386,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.25F);
-            this.label1.Location = new System.Drawing.Point(131, 98);
+            this.label1.Location = new System.Drawing.Point(127, 94);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 47);
             this.label1.TabIndex = 0;

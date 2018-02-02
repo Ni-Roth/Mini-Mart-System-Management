@@ -64,6 +64,8 @@
     <Compile Include="Forms\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="InstanceClasses\Employee.cs" />
+    <Compile Include="InstanceClasses\Role.cs" />
     <Compile Include="Intefaces\IFunctionModel.cs" />
     <Compile Include="Intefaces\IMessageType.cs" />
     <Compile Include="UserControls\UBin.cs">
@@ -74,7 +76,6 @@
     </Compile>
     <Compile Include="InstanceClasses\Product.cs" />
     <Compile Include="LocalConnection\Connection.cs" />
-    <Compile Include="InstanceClasses\User.cs" />
     <Compile Include="UserControls\UImportStock.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -107,11 +108,11 @@
     <Compile Include="UserControls\USold.Designer.cs">
       <DependentUpon>USold.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UUser.cs">
+    <Compile Include="UserControls\UEmployee.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UUser.Designer.cs">
-      <DependentUpon>UUser.cs</DependentUpon>
+    <Compile Include="UserControls\UEmployee.Designer.cs">
+      <DependentUpon>UEmployee.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Forms\frmInsertEmployee.resx">
       <DependentUpon>frmInsertEmployee.cs</DependentUpon>
@@ -147,8 +148,8 @@
     <EmbeddedResource Include="UserControls\USold.resx">
       <DependentUpon>USold.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UUser.resx">
-      <DependentUpon>UUser.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\UEmployee.resx">
+      <DependentUpon>UEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
