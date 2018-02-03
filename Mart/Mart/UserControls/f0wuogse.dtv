@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UProduct));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.dgvProduct = new System.Windows.Forms.DataGridView();
+            this.dvgProduct = new System.Windows.Forms.DataGridView();
             this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colStockNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,22 +41,19 @@
             this.colStockID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.cboSort = new System.Windows.Forms.ComboBox();
-            this.txtSearchBox = new System.Windows.Forms.TextBox();
-            this.btnSearchProduct = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.btnDeleteProduct = new System.Windows.Forms.Button();
             this.btnUpdateProduct = new System.Windows.Forms.Button();
-            this.statusProduct = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.lblTotalItem = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnSearchProduct = new System.Windows.Forms.Button();
+            this.txtSearchBox = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgProduct)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.statusProduct.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -64,9 +61,9 @@
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(174)))), ((int)(((byte)(190)))));
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.dgvProduct, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.dvgProduct, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.statusProduct, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.statusStrip1, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
@@ -74,21 +71,21 @@
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.26742F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.73258F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1392, 967);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1392, 876);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // dgvProduct
+            // dvgProduct
             // 
-            this.dgvProduct.AllowUserToAddRows = false;
-            this.dgvProduct.AllowUserToDeleteRows = false;
-            this.dgvProduct.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvProduct.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgvProduct.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvProduct.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvProduct.ColumnHeadersHeight = 50;
-            this.dgvProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dvgProduct.AllowUserToAddRows = false;
+            this.dvgProduct.AllowUserToDeleteRows = false;
+            this.dvgProduct.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dvgProduct.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dvgProduct.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dvgProduct.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dvgProduct.ColumnHeadersHeight = 50;
+            this.dvgProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dvgProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colID,
             this.colStockNo,
             this.colName,
@@ -98,14 +95,14 @@
             this.colCodeItem,
             this.colStockID,
             this.colQuantity});
-            this.dgvProduct.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvProduct.Location = new System.Drawing.Point(50, 169);
-            this.dgvProduct.Margin = new System.Windows.Forms.Padding(50, 0, 50, 0);
-            this.dgvProduct.Name = "dgvProduct";
-            this.dgvProduct.ReadOnly = true;
-            this.dgvProduct.RowTemplate.Height = 28;
-            this.dgvProduct.Size = new System.Drawing.Size(1292, 757);
-            this.dgvProduct.TabIndex = 0;
+            this.dvgProduct.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dvgProduct.Location = new System.Drawing.Point(50, 152);
+            this.dvgProduct.Margin = new System.Windows.Forms.Padding(50, 0, 50, 0);
+            this.dvgProduct.Name = "dvgProduct";
+            this.dvgProduct.ReadOnly = true;
+            this.dvgProduct.RowTemplate.Height = 28;
+            this.dvgProduct.Size = new System.Drawing.Size(1292, 682);
+            this.dvgProduct.TabIndex = 0;
             // 
             // colID
             // 
@@ -169,72 +166,59 @@
             this.panel1.Location = new System.Drawing.Point(50, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(50, 0, 50, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1292, 169);
+            this.panel1.Size = new System.Drawing.Size(1292, 152);
             this.panel1.TabIndex = 1;
             // 
-            // panel3
+            // btnDeleteProduct
             // 
-            this.panel3.Controls.Add(this.cboSort);
-            this.panel3.Controls.Add(this.txtSearchBox);
-            this.panel3.Controls.Add(this.btnSearchProduct);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(543, 169);
-            this.panel3.TabIndex = 3;
+            this.btnDeleteProduct.BackColor = System.Drawing.Color.Chocolate;
+            this.btnDeleteProduct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDeleteProduct.BackgroundImage")));
+            this.btnDeleteProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnDeleteProduct.FlatAppearance.BorderSize = 0;
+            this.btnDeleteProduct.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnDeleteProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteProduct.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteProduct.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteProduct.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnDeleteProduct.Location = new System.Drawing.Point(241, 35);
+            this.btnDeleteProduct.Name = "btnDeleteProduct";
+            this.btnDeleteProduct.Size = new System.Drawing.Size(173, 92);
+            this.btnDeleteProduct.TabIndex = 0;
+            this.btnDeleteProduct.Text = "Delete";
+            this.btnDeleteProduct.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnDeleteProduct.UseVisualStyleBackColor = false;
+            this.btnDeleteProduct.Click += new System.EventHandler(this.button1_Click);
             // 
-            // cboSort
+            // btnUpdateProduct
             // 
-            this.cboSort.DisplayMember = "Name";
-            this.cboSort.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboSort.FormattingEnabled = true;
-            this.cboSort.ItemHeight = 20;
-            this.cboSort.Items.AddRange(new object[] {
-            "Code Item",
-            "Expire Date",
-            "ID",
-            "Name",
-            "Price",
-            "Quantity",
-            "Stock ID",
-            "Stock No",
-            "Type"});
-            this.cboSort.Location = new System.Drawing.Point(278, 128);
-            this.cboSort.Name = "cboSort";
-            this.cboSort.Size = new System.Drawing.Size(163, 26);
-            this.cboSort.TabIndex = 2;
-            this.cboSort.ValueMember = "Name";
+            this.btnUpdateProduct.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnUpdateProduct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdateProduct.BackgroundImage")));
+            this.btnUpdateProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnUpdateProduct.FlatAppearance.BorderSize = 0;
+            this.btnUpdateProduct.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnUpdateProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateProduct.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateProduct.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateProduct.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnUpdateProduct.Location = new System.Drawing.Point(54, 35);
+            this.btnUpdateProduct.Name = "btnUpdateProduct";
+            this.btnUpdateProduct.Size = new System.Drawing.Size(151, 92);
+            this.btnUpdateProduct.TabIndex = 1;
+            this.btnUpdateProduct.Text = "Update";
+            this.btnUpdateProduct.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnUpdateProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUpdateProduct.UseVisualStyleBackColor = false;
             // 
-            // txtSearchBox
+            // statusStrip1
             // 
-            this.txtSearchBox.AllowDrop = true;
-            this.txtSearchBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearchBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSearchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchBox.Location = new System.Drawing.Point(2, 128);
-            this.txtSearchBox.Margin = new System.Windows.Forms.Padding(0);
-            this.txtSearchBox.MaximumSize = new System.Drawing.Size(300, 40);
-            this.txtSearchBox.Multiline = true;
-            this.txtSearchBox.Name = "txtSearchBox";
-            this.txtSearchBox.Size = new System.Drawing.Size(198, 40);
-            this.txtSearchBox.TabIndex = 1;
-            this.txtSearchBox.TextChanged += new System.EventHandler(this.txtSearchBox_TextChanged);
-            // 
-            // btnSearchProduct
-            // 
-            this.btnSearchProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.btnSearchProduct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearchProduct.BackgroundImage")));
-            this.btnSearchProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSearchProduct.FlatAppearance.BorderSize = 0;
-            this.btnSearchProduct.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnSearchProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearchProduct.Location = new System.Drawing.Point(203, 128);
-            this.btnSearchProduct.Name = "btnSearchProduct";
-            this.btnSearchProduct.Size = new System.Drawing.Size(50, 41);
-            this.btnSearchProduct.TabIndex = 0;
-            this.btnSearchProduct.UseVisualStyleBackColor = false;
+            this.statusStrip1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.statusStrip1.Location = new System.Drawing.Point(50, 834);
+            this.statusStrip1.Margin = new System.Windows.Forms.Padding(50, 0, 50, 0);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1292, 22);
+            this.statusStrip1.TabIndex = 2;
+            this.statusStrip1.Text = "statusStrip1";
             // 
             // panel2
             // 
@@ -243,77 +227,54 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(857, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(435, 169);
+            this.panel2.Size = new System.Drawing.Size(435, 152);
             this.panel2.TabIndex = 2;
             // 
-            // btnDeleteProduct
+            // panel3
             // 
-            this.btnDeleteProduct.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnDeleteProduct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDeleteProduct.BackgroundImage")));
-            this.btnDeleteProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnDeleteProduct.FlatAppearance.BorderSize = 0;
-            this.btnDeleteProduct.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnDeleteProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteProduct.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteProduct.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteProduct.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnDeleteProduct.Location = new System.Drawing.Point(342, 72);
-            this.btnDeleteProduct.Margin = new System.Windows.Forms.Padding(0);
-            this.btnDeleteProduct.Name = "btnDeleteProduct";
-            this.btnDeleteProduct.Size = new System.Drawing.Size(93, 97);
-            this.btnDeleteProduct.TabIndex = 0;
-            this.btnDeleteProduct.Text = "Delete";
-            this.btnDeleteProduct.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnDeleteProduct.UseVisualStyleBackColor = false;
+            this.panel3.Controls.Add(this.comboBox1);
+            this.panel3.Controls.Add(this.txtSearchBox);
+            this.panel3.Controls.Add(this.btnSearchProduct);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(543, 152);
+            this.panel3.TabIndex = 3;
             // 
-            // btnUpdateProduct
+            // btnSearchProduct
             // 
-            this.btnUpdateProduct.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnUpdateProduct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdateProduct.BackgroundImage")));
-            this.btnUpdateProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnUpdateProduct.FlatAppearance.BorderSize = 0;
-            this.btnUpdateProduct.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnUpdateProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateProduct.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateProduct.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateProduct.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnUpdateProduct.Location = new System.Drawing.Point(239, 72);
-            this.btnUpdateProduct.Margin = new System.Windows.Forms.Padding(0);
-            this.btnUpdateProduct.Name = "btnUpdateProduct";
-            this.btnUpdateProduct.Size = new System.Drawing.Size(100, 97);
-            this.btnUpdateProduct.TabIndex = 1;
-            this.btnUpdateProduct.Text = "Update";
-            this.btnUpdateProduct.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnUpdateProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnUpdateProduct.UseCompatibleTextRendering = true;
-            this.btnUpdateProduct.UseVisualStyleBackColor = false;
+            this.btnSearchProduct.BackColor = System.Drawing.Color.White;
+            this.btnSearchProduct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearchProduct.BackgroundImage")));
+            this.btnSearchProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSearchProduct.FlatAppearance.BorderSize = 0;
+            this.btnSearchProduct.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnSearchProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchProduct.Location = new System.Drawing.Point(213, 55);
+            this.btnSearchProduct.Name = "btnSearchProduct";
+            this.btnSearchProduct.Size = new System.Drawing.Size(54, 50);
+            this.btnSearchProduct.TabIndex = 0;
+            this.btnSearchProduct.UseVisualStyleBackColor = false;
             // 
-            // statusProduct
+            // txtSearchBox
             // 
-            this.statusProduct.BackColor = System.Drawing.Color.White;
-            this.statusProduct.Dock = System.Windows.Forms.DockStyle.Top;
-            this.statusProduct.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.statusProduct.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1,
-            this.lblTotalItem});
-            this.statusProduct.Location = new System.Drawing.Point(50, 926);
-            this.statusProduct.Margin = new System.Windows.Forms.Padding(50, 0, 50, 0);
-            this.statusProduct.Name = "statusProduct";
-            this.statusProduct.Size = new System.Drawing.Size(1292, 30);
-            this.statusProduct.TabIndex = 2;
-            this.statusProduct.Text = "statusStrip1";
+            this.txtSearchBox.AllowDrop = true;
+            this.txtSearchBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearchBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSearchBox.Location = new System.Drawing.Point(12, 55);
+            this.txtSearchBox.Name = "txtSearchBox";
+            this.txtSearchBox.Size = new System.Drawing.Size(200, 19);
+            this.txtSearchBox.TabIndex = 1;
             // 
-            // toolStripStatusLabel1
+            // comboBox1
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(104, 25);
-            this.toolStripStatusLabel1.Text = "Total Item : ";
-            // 
-            // lblTotalItem
-            // 
-            this.lblTotalItem.Name = "lblTotalItem";
-            this.lblTotalItem.Size = new System.Drawing.Size(22, 25);
-            this.lblTotalItem.Text = "0";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.ItemHeight = 20;
+            this.comboBox1.Location = new System.Drawing.Point(299, 77);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(205, 28);
+            this.comboBox1.TabIndex = 2;
             // 
             // UProduct
             // 
@@ -322,16 +283,14 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UProduct";
-            this.Size = new System.Drawing.Size(1392, 967);
+            this.Size = new System.Drawing.Size(1392, 876);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgProduct)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.statusProduct.ResumeLayout(false);
-            this.statusProduct.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -339,7 +298,7 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.DataGridView dgvProduct;
+        private System.Windows.Forms.DataGridView dvgProduct;
         private System.Windows.Forms.DataGridViewTextBoxColumn colID;
         private System.Windows.Forms.DataGridViewTextBoxColumn colStockNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn colName;
@@ -352,14 +311,12 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnUpdateProduct;
         private System.Windows.Forms.Button btnDeleteProduct;
-        private System.Windows.Forms.StatusStrip statusProduct;
+        private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.ComboBox cboSort;
+        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox txtSearchBox;
         private System.Windows.Forms.Button btnSearchProduct;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        private System.Windows.Forms.ToolStripStatusLabel lblTotalItem;
 
     }
 }

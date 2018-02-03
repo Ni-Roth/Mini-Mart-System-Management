@@ -8,5 +8,6 @@ namespace Mart.InstanceClass
 {
     class Product
     {
+
     }
 }
